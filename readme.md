@@ -1,19 +1,16 @@
-# Getting Started
+### 论文：
 
-### Reference Documentation
-For further reference, please consider the following sections:
+论文存放于paper目录下，论文文件名称为《关于BigTable存储系统的个人理解.md》
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.4.0/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.4.0/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.4.0/reference/htmlsingle/#boot-features-developing-web-applications)
-* [Spring Data Redis (Access+Driver)](https://docs.spring.io/spring-boot/docs/2.4.0/reference/htmlsingle/#boot-features-redis)
+### 课内文件：
 
-### Guides
-The following guides illustrate how to use some features concretely:
+课上写的三段代码存放于inclass_code目录下
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-* [Messaging with Redis](https://spring.io/guides/gs/messaging-redis/)
+### redis项目：
+
+redis项目存放于src目录下，具体信息详见src/main/java目录下的redis_readme.md文件
+
+### 
+
+
 
