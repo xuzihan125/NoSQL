@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 public class EnumCamp {
     public enum Directory{
 
-        JSON_PATH("src\\main\\java\\com\\redis\\project\\config\\","config.json"),
         COUNTER_CONFIG_PATH("src\\main\\java\\com\\redis\\project\\config\\","counter.json"),
         ACTION_CONFIG_PATH("src\\main\\java\\com\\redis\\project\\config\\","action.json")
         ;
