@@ -1,0 +1,14 @@
+{
+  "counterName": "incrUserNum",
+  "increase_num": 100,
+  "keyField": "num",
+  "descKey": "desc",
+  "desc": "这里是房间信息描述",
+  "setKey": "userName",
+  "userZsetKey": "userZSet",
+  "rewardZsetKey": "rewardZSet",
+  "listKey": "rewardList",
+  "timeLength": 36000,
+  "endTime": "currentDate",
+  "endRange": 10
+}

@@ -1,0 +1,76 @@
+{
+  "action":[
+    {
+      "name": "enter",
+      "desc":"user enter room",
+      "counter": [
+        "checkUserNotIn","addRoomUser","countPeopleEnter","userIn"
+      ]
+    },
+    {
+      "name": "leave",
+      "desc":"user leave room",
+      "counter": [
+        "checkUserIn","subRoomUser","countPeopleOut","userOut"
+      ]
+    },
+    {
+      "name": "reward",
+      "desc":"user reward in room",
+      "counter": [
+        "checkUserIn","increaseUserReward","recordRewardHistory"
+      ]
+    },
+    {
+      "name": "desc",
+      "desc":"get room desc",
+      "counter": [
+        "getRoomDesc"
+      ]
+    },
+    {
+      "name": "totalPeople",
+      "desc":"total user in room",
+      "counter": [
+        "checkUser"
+      ]
+    },
+    {
+      "name": "FREQ",
+      "desc":"user enter room",
+      "counter": [
+        "FREQ"
+      ]
+    },
+    {
+      "name": "rewardList",
+      "desc":"get people list that reward most in room",
+      "counter": [
+        "getUserRewardList"
+      ]
+    },
+    {
+      "name": "rewardHistory",
+      "desc":"get reward history in room",
+      "counter": [
+        "getRewardHistory"
+      ]
+    },
+    {
+      "name": "clean",
+      "desc":"clean all history",
+      "counter": [
+        "del"
+      ]
+    },
+    {
+      "name": "init",
+      "desc":"init system set",
+      "counter": [
+        "del","setRoomDesc"
+      ]
+    }
+
+  ]
+
+}

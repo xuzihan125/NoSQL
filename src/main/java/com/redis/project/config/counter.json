@@ -1,0 +1,157 @@
+{
+  "counter": [
+    {
+      "name": "userIn",
+      "counterName": "incr",
+      "desc": "increase people count for user in room",
+      "key": "roomUser",
+      "type": "num",
+      "value": "1",
+      "expireTime": "10000"
+    },
+    {
+      "name": "userOut",
+      "counterName": "decr",
+      "desc": "decrease people count for user in room",
+      "key": "roomUser",
+      "type": "num",
+      "value": "1",
+      "expireTime": "10000"
+    },
+    {
+      "name": "checkUser",
+      "counterName": "getNum",
+      "desc": "get people count for user in room",
+      "key": "roomUser",
+      "type": "num",
+      "value": "",
+      "expireTime": "10000"
+    },
+    {
+      "name": "getRoomDesc",
+      "counterName": "getDesc",
+      "desc": "get desc for room",
+      "key": "roomDesc",
+      "type": "string",
+      "value": "",
+      "expireTime": "10000"
+    },
+    {
+      "name": "setRoomDesc",
+      "counterName": "setDesc",
+      "desc": "set desc for room",
+      "key": "roomDesc",
+      "type": "string",
+      "value": "这里是房间描述",
+      "expireTime": "10000"
+    },
+    {
+      "name": "recordRewardHistory",
+      "counterName": "addList",
+      "desc": "record history for user reward in room",
+      "key": "rewordHistory",
+      "type": "list",
+      "value": "{user}\\{currentTimeString}\\{value}",
+      "expireTime": "10000"
+    },
+    {
+      "name": "getRewardHistory",
+      "counterName": "getList",
+      "desc": "get history for user reward in room",
+      "key": "rewordHistory",
+      "type": "list",
+      "value": "-10 -1",
+      "expireTime": "10000"
+    },
+    {
+      "name": "addRoomUser",
+      "counterName": "addSet",
+      "desc": "add user to set that is in the room",
+      "key": "roomUserSet",
+      "type": "set",
+      "value": "{user}",
+      "expireTime": "10000"
+    },
+    {
+      "name": "subRoomUser",
+      "counterName": "subSet",
+      "desc": "remove user from set that is in the room",
+      "key": "roomUserSet",
+      "type": "set",
+      "value": "{user}",
+      "expireTime": "10000"
+    },
+    {
+      "name": "checkUserIn",
+      "counterName": "checkSet",
+      "desc": "check user in the room",
+      "key": "roomUserSet",
+      "type": "set",
+      "value": "{user} true",
+      "expireTime": "10000"
+    },
+    {
+      "name": "checkUserNotIn",
+      "counterName": "checkSet",
+      "desc": "check user not in the room",
+      "key": "roomUserSet",
+      "type": "set",
+      "value": "{user} false",
+      "expireTime": "10000"
+    },
+    {
+      "name":"countPeopleEnter",
+      "counterName": "addZSet",
+      "desc": "record people enter time for user in room",
+      "key": "roomUserEnter",
+      "type": "zset",
+      "value": "in-{user}-{currentTimeString} {currentTime}",
+      "expireTime": "10000"
+    },
+    {
+      "name":"countPeopleOut",
+      "counterName": "addZSet",
+      "desc": "record people leave time for user in room",
+      "key": "roomUserEnter",
+      "type": "zset",
+      "value": "out-{user}-{currentTimeString} {currentTime}",
+      "expireTime": "10000"
+    },
+    {
+      "name": "increaseUserReward",
+      "counterName": "addZSetValue",
+      "desc": "increase people count for user in room",
+      "key": "roomUserReward",
+      "type": "zset",
+      "value": "{user} {value}",
+      "expireTime": "10000"
+    },
+    {
+      "name": "getUserRewardList",
+      "counterName": "getZSetByValue",
+      "desc": "获得打赏金额最高人员列表",
+      "key": "roomUserReward",
+      "type": "zset",
+      "value": "0 5",
+      "expireTime": "10000"
+    },
+    {
+      "name": "FREQ",
+      "counterName": "freq",
+      "desc": "check people list in given time.",
+      "key": "roomUserEnter",
+      "type": "zset",
+      "value": "2020-12-01-00:00:00 2020-12-30-00:00:00",
+      "expireTime": "10000"
+    },
+    {
+      "name": "del",
+      "counterName": "del",
+      "desc": "delete all history",
+      "key": "",
+      "type": "op",
+      "value": "roomUser roomDesc rewordHistory roomUserEnter roomUserReward",
+      "expireTime": "10000"
+    }
+  ]
+}
